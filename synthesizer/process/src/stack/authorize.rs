@@ -14,6 +14,7 @@
 
 use super::*;
 
+
 impl<N: Network> Stack<N> {
     /// Authorizes a call to the program function for the given inputs.
     #[inline]

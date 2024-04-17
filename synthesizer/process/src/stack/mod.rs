@@ -30,6 +30,8 @@ pub use register_types::*;
 mod registers;
 pub use registers::*;
 
+mod stronghold;
+
 mod authorize;
 mod deploy;
 mod evaluate;

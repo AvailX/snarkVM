@@ -80,7 +80,7 @@ pub trait FromBytes {
     }
 }
 
-pub struct ToBytesSerializer<T: ToBytes>(String, Option<usize>, PhantomData<T>);
+pub struct ToBytesSerializer<T: ToBytes>(PhantomData<T>);
 
 impl<T: ToBytes> ToBytesSerializer<T> {
     /// Serializes a static-sized object as a byte array (without length encoding).
@@ -100,7 +100,7 @@ impl<T: ToBytes> ToBytesSerializer<T> {
     }
 }
 
-pub struct FromBytesDeserializer<T: FromBytes>(String, Option<usize>, PhantomData<T>);
+pub struct FromBytesDeserializer<T: FromBytes>(PhantomData<T>);
 
 impl<'de, T: FromBytes> FromBytesDeserializer<T> {
     /// Deserializes a static-sized byte array (without length encoding).
@@ -166,12 +166,12 @@ impl<'de, T: FromBytes> FromBytesDeserializer<T> {
     }
 }
 
-pub struct FromBytesVisitor<'a>(&'a mut Vec<u8>, SmolStr, Option<usize>);
+pub struct FromBytesVisitor<'a>(&'a mut Vec<u8>, SmolStr);
 
 impl<'a> FromBytesVisitor<'a> {
     /// Initializes a new `FromBytesVisitor` with the given `buffer` and `name`.
     pub fn new(buffer: &'a mut Vec<u8>, name: &str) -> Self {
-        Self(buffer, SmolStr::new(name), None)
+        Self(buffer, SmolStr::new(name))
     }
 }
 
@@ -476,6 +476,40 @@ pub fn bytes_from_bits_le(bits: &[bool]) -> Vec<u8> {
     }
 
     bytes
+}
+
+/// A wrapper around a `Write` instance that limits the number of bytes that can be written.
+pub struct LimitedWriter<W: Write> {
+    writer: W,
+    limit: usize,
+    remaining: usize,
+}
+
+impl<W: Write> LimitedWriter<W> {
+    pub fn new(writer: W, limit: usize) -> Self {
+        Self { writer, limit, remaining: limit }
+    }
+}
+
+impl<W: Write> Write for LimitedWriter<W> {
+    fn write(&mut self, buf: &[u8]) -> IoResult<usize> {
+        if self.remaining == 0 && !buf.is_empty() {
+            return Err(std::io::Error::new(std::io::ErrorKind::Other, format!("Byte limit exceeded: {}", self.limit)));
+        }
+
+        let max_write = std::cmp::min(buf.len(), self.remaining);
+        match self.writer.write(&buf[..max_write]) {
+            Ok(n) => {
+                self.remaining -= n;
+                Ok(n)
+            }
+            Err(e) => Err(e),
+        }
+    }
+
+    fn flush(&mut self) -> IoResult<()> {
+        self.writer.flush()
+    }
 }
 
 #[cfg(test)]

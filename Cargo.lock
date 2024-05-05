@@ -1691,7 +1691,7 @@ dependencies = [
 [[package]]
 name = "iota-crypto"
 version = "0.23.1"
-source = "git+https://github.com/AvailX/crypto.rs?rev=729131d#729131de13c4115ea78f731e3f3ec2b5f03889a3"
+source = "git+https://github.com/AvailX/crypto.rs?rev=5e0a8a7#5e0a8a711717e923e1ab57cf8c3d21e2bdaef63d"
 dependencies = [
  "aead",
  "aes",
@@ -1711,7 +1711,7 @@ dependencies = [
  "pbkdf2",
  "rand",
  "sha2",
- "snarkvm-console 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "tiny-keccak",
  "unicode-normalization",
  "x25519-dalek",
@@ -1721,15 +1721,15 @@ dependencies = [
 [[package]]
 name = "iota_stronghold"
 version = "2.0.0"
-source = "git+https://github.com/AvailX/stronghold.rs?rev=414976c#414976c52e4b4db80aa235027286f6a11f09f6d9"
+source = "git+https://github.com/AvailX/stronghold.rs?rev=f07c819#f07c81963f4000bad2868488189d7f3821cd287b"
 dependencies = [
  "bincode",
  "hkdf",
- "iota-crypto 0.23.1 (git+https://github.com/AvailX/crypto.rs?rev=729131d)",
+ "iota-crypto 0.23.1 (git+https://github.com/AvailX/crypto.rs?rev=5e0a8a7)",
  "rand",
  "rust-argon2",
  "serde",
- "snarkvm-console 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "stronghold-derive",
  "stronghold-utils",
  "stronghold_engine",
@@ -3209,7 +3209,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-algorithms"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -3229,10 +3229,10 @@ dependencies = [
  "serde",
  "sha2",
  "smallvec",
- "snarkvm-curves 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-fields 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-parameters 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-curves 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-fields 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-parameters 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "thiserror",
 ]
 
@@ -3459,14 +3459,14 @@ dependencies = [
 [[package]]
 name = "snarkvm-console"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
- "snarkvm-console-account 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-algorithms 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-collections 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-network 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-program 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-account 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-algorithms 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-collections 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-network 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-program 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
 ]
 
 [[package]]
@@ -3485,11 +3485,11 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-account"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "bs58",
- "snarkvm-console-network 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-network 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "zeroize",
 ]
 
@@ -3514,13 +3514,13 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-algorithms"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "blake2s_simd",
  "smallvec",
- "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-fields 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-fields 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "tiny-keccak",
 ]
 
@@ -3540,12 +3540,12 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-collections"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "aleo-std",
  "rayon",
- "snarkvm-console-algorithms 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-algorithms 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
 ]
 
 [[package]]
@@ -3573,7 +3573,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-network"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "anyhow",
  "indexmap 2.1.0",
@@ -3582,15 +3582,15 @@ dependencies = [
  "once_cell",
  "paste",
  "serde",
- "snarkvm-algorithms 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-algorithms 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-collections 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-curves 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-fields 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-parameters 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-algorithms 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-algorithms 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-collections 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-curves 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-fields 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-parameters 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
 ]
 
 [[package]]
@@ -3613,7 +3613,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-network-environment"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "anyhow",
  "bech32",
@@ -3622,9 +3622,9 @@ dependencies = [
  "num-traits",
  "rand",
  "serde",
- "snarkvm-curves 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-fields 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-curves 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-fields 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "zeroize",
 ]
 
@@ -3652,7 +3652,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-program"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "enum_index",
  "enum_index_derive",
@@ -3662,12 +3662,12 @@ dependencies = [
  "once_cell",
  "paste",
  "serde_json",
- "snarkvm-console-account 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-algorithms 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-collections 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-network 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-account 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-algorithms 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-collections 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-network 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
 ]
 
 [[package]]
@@ -3689,16 +3689,16 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
- "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-address 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-group 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-integers 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-scalar 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-string 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-address 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-group 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-integers 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-scalar 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-string 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
 ]
 
 [[package]]
@@ -3716,12 +3716,12 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-address"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
- "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-group 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-group 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
 ]
 
 [[package]]
@@ -3736,9 +3736,9 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-boolean"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
- "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
 ]
 
 [[package]]
@@ -3755,10 +3755,10 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-field"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
- "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "zeroize",
 ]
 
@@ -3777,12 +3777,12 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-group"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
- "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-scalar 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-scalar 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
 ]
 
 [[package]]
@@ -3800,12 +3800,12 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-integers"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
- "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-scalar 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-scalar 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
 ]
 
 [[package]]
@@ -3823,11 +3823,11 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-scalar"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
- "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "zeroize",
 ]
 
@@ -3846,12 +3846,12 @@ dependencies = [
 [[package]]
 name = "snarkvm-console-types-string"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
- "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-console-types-integers 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console-network-environment 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-boolean 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-field 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-console-types-integers 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
 ]
 
 [[package]]
@@ -3872,14 +3872,14 @@ dependencies = [
 [[package]]
 name = "snarkvm-curves"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "rand",
  "rayon",
  "rustc_version",
  "serde",
- "snarkvm-fields 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-fields 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "thiserror",
 ]
 
@@ -3904,7 +3904,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-fields"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -3913,7 +3913,7 @@ dependencies = [
  "rand",
  "rayon",
  "serde",
- "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "thiserror",
  "zeroize",
 ]
@@ -4227,7 +4227,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-parameters"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -4244,8 +4244,8 @@ dependencies = [
  "rand",
  "serde_json",
  "sha2",
- "snarkvm-curves 0.16.19 (git+https://github.com/AvailX/snarkVM)",
- "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-curves 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
+ "snarkvm-utilities 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "thiserror",
 ]
 
@@ -4302,6 +4302,7 @@ dependencies = [
  "serde_json",
  "snarkvm-circuit",
  "snarkvm-console 0.16.19",
+ "snarkvm-console 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "snarkvm-ledger-block",
  "snarkvm-ledger-committee",
  "snarkvm-ledger-query",
@@ -4366,7 +4367,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-utilities"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "aleo-std",
  "anyhow",
@@ -4379,7 +4380,7 @@ dependencies = [
  "serde",
  "serde_json",
  "smol_str",
- "snarkvm-utilities-derives 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-utilities-derives 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "thiserror",
  "zeroize",
 ]
@@ -4396,7 +4397,7 @@ dependencies = [
 [[package]]
 name = "snarkvm-utilities-derives"
 version = "0.16.19"
-source = "git+https://github.com/AvailX/snarkVM#d48f6fb7d7ca36d134407baebcc59952fe58c546"
+source = "git+https://github.com/AvailX/snarkVM?rev=936b106#936b10655d698edaf32a57d9b864fa77805bccf4"
 dependencies = [
  "proc-macro2",
  "quote 1.0.35",
@@ -4469,7 +4470,7 @@ dependencies = [
 [[package]]
 name = "stronghold-derive"
 version = "1.0.0"
-source = "git+https://github.com/AvailX/stronghold.rs?rev=414976c#414976c52e4b4db80aa235027286f6a11f09f6d9"
+source = "git+https://github.com/AvailX/stronghold.rs?rev=f07c819#f07c81963f4000bad2868488189d7f3821cd287b"
 dependencies = [
  "proc-macro2",
  "quote 1.0.35",
@@ -4479,7 +4480,7 @@ dependencies = [
 [[package]]
 name = "stronghold-runtime"
 version = "2.0.0"
-source = "git+https://github.com/AvailX/stronghold.rs?rev=414976c#414976c52e4b4db80aa235027286f6a11f09f6d9"
+source = "git+https://github.com/AvailX/stronghold.rs?rev=f07c819#f07c81963f4000bad2868488189d7f3821cd287b"
 dependencies = [
  "dirs",
  "iota-crypto 0.23.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -4497,7 +4498,7 @@ dependencies = [
 [[package]]
 name = "stronghold-utils"
 version = "1.0.0"
-source = "git+https://github.com/AvailX/stronghold.rs?rev=414976c#414976c52e4b4db80aa235027286f6a11f09f6d9"
+source = "git+https://github.com/AvailX/stronghold.rs?rev=f07c819#f07c81963f4000bad2868488189d7f3821cd287b"
 dependencies = [
  "rand",
  "stronghold-derive",
@@ -4506,7 +4507,7 @@ dependencies = [
 [[package]]
 name = "stronghold_engine"
 version = "2.0.0"
-source = "git+https://github.com/AvailX/stronghold.rs?rev=414976c#414976c52e4b4db80aa235027286f6a11f09f6d9"
+source = "git+https://github.com/AvailX/stronghold.rs?rev=f07c819#f07c81963f4000bad2868488189d7f3821cd287b"
 dependencies = [
  "anyhow",
  "dirs-next",
@@ -4621,17 +4622,17 @@ dependencies = [
 [[package]]
 name = "tauri-plugin-aleo-stronghold"
 version = "2.0.0-beta.3"
-source = "git+https://github.com/AvailX/tauri-plugin-aleo-stronghold?rev=af78208#af78208ad82c32b9b89ec2f8d2f186783f50f362"
+source = "git+https://github.com/AvailX/tauri-plugin-aleo-stronghold?rev=cad1089#cad10893640725cf23060dad121e99933e9b1585"
 dependencies = [
  "hex",
- "iota-crypto 0.23.1 (git+https://github.com/AvailX/crypto.rs?rev=729131d)",
+ "iota-crypto 0.23.1 (git+https://github.com/AvailX/crypto.rs?rev=5e0a8a7)",
  "iota_stronghold",
  "rand_chacha",
  "rand_core 0.6.4",
  "rust-argon2",
  "serde",
  "serde_json",
- "snarkvm-console 0.16.19 (git+https://github.com/AvailX/snarkVM)",
+ "snarkvm-console 0.16.19 (git+https://github.com/AvailX/snarkVM?rev=936b106)",
  "thiserror",
  "zeroize",
 ]

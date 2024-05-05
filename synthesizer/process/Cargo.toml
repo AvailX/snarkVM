@@ -55,6 +55,11 @@ package = "snarkvm-console"
 path = "../../console"
 version = "=0.16.19"
 
+[dependencies.snarkvm-console]
+ git = "https://github.com/AvailX/snarkVM"
+ rev="936b106"
+ version= "0.16.19"
+
 [dependencies.circuit]
 package = "snarkvm-circuit"
 path = "../../circuit"
@@ -154,8 +159,8 @@ version = "3"
 
 [dependencies.tauri-plugin-aleo-stronghold]
 git="https://github.com/AvailX/tauri-plugin-aleo-stronghold"
-rev="af78208"
+rev="cad1089"
 
 [dependencies.iota_stronghold]
 git="https://github.com/AvailX/stronghold.rs"
-rev="414976c"
+rev="f07c819"
